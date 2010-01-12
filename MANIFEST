@@ -1,0 +1,8 @@
+* CHANGES
+* MANIFEST
+* README
+* Rakefile
+* win32-shortcut.gemspec
+* examples/example_shortcut.rb
+* lib/win32/shortcut.rb
+* test/test_shortcut.rb

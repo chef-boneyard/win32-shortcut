@@ -1,0 +1,59 @@
+== 0.2.3 - 6-Aug-2009
+* License changed to Artistic 2.0.
+* Some gemspec updates, including license and description.
+
+== 0.2.2 - 10-Jul-2008
+* Fixed a bug where creating folder shortcuts would fail if forward slashes
+  were used. All forward slashes are now converted to backslashes internally.
+  Thanks go to Ajay Sprewell for the spot.
+* Some documentation, test and gemspec updates.
+
+== 0.2.1 - 29-Jul-2007
+* Added a Rakefile with tasks for installation and testing.
+* Removed the install.rb file, since the Rakefile now handles installation.
+* Doc updates.
+
+== 0.2.0 - 30-Oct-2006
+* Replaced the C extension code with a pure Ruby version that uses win32ole
+  and Wscript.Shell behind the scenes.
+* The Shortcut#icon_number method was dropped since that property isn't
+  supported by Wscript.Shell.  It was a useless method anyway.
+* The Shortcut#relative_path method was dropped since that property isn't
+  actually supported by a Wsh.Shortcut object, contrary to what the MSDN
+  documentation says.
+* The Shortcut.new method now takes a block, yields self, and automatically
+  ensures that Shortcut#save is called at the end of the block.
+* The Shortcut#hotkey method now takes a human readable string instead of a
+  hex value.
+* The Shortcut#show_cmd method was renamed Shortcut#window_style (though
+  there's an alias for backwards compatability.
+* The Shortcut#window_style accessor now accepts/emits human readable
+  strings as well as constants.
+* Removed the 'doc' directory.  The documentation is now inlined as rdoc
+  and/or in the README file.
+
+== 0.1.4 - 17-Jul-2005
+* Fixed a bug in the Shortcut.open method.  Thanks go to an anonymous user
+  for the spot.
+* Added a test for the Shortcut.open method.
+* Added a Shortcut.open example in the test script.
+* Modified the extconf.rb script to set _WIN32_WINNT macro as needed.
+
+== 0.1.3 - 9-Jun-2005
+* Removed shortcut.rd file.
+* The shortcut.txt file is now rdoc friendly.
+* Now Unicode friendly.
+* Minor test suite tweaks and additions.
+* Minor changes to the example program.
+* Code cleanup.
+
+== 0.1.2 - 1-Mar-2005
+* Moved the 'examples' directory to the toplevel directory.
+* Renamed the sample script to 'shortcut_test.rb'.
+
+== 0.1.1 - 12-Feb-2005
+* Modified the extconf.rb file to be more cygwin/mingw friendly.
+* Modified some documentation to be more rdoc friendly.
+
+== 0.1.0 - 28-Sep-2004
+* Initial release
