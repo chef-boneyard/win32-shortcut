@@ -1,60 +1,52 @@
 == Description
-   This is an interface for creating and/or modifying Windows shortcuts.
-
-== Requirements
-   Ruby 1.8.2 or later.
-   The win32ole library (part of the Ruby standard library).
+  This is an interface for creating and/or modifying Windows shortcuts.
 
 == Installation
-   rake test (optional)
-   rake install (non-gem) or rake install_gem (gem)
+  gem install win32-shortcut
    
 == Synopsis
 	require 'win32/shortcut'
-   include Win32
+  include Win32
 	
-   Shortcut.new('c:/test.lnk') do |s|
-      s.description       = 'test link'
-      s.path              = 'c:/winnt/notepad.exe'
-      s.show_cmd          = Shortcut::SHOWNORMAL
-      s.working_directory = 'C:/'
-   end
+  Shortcut.new('c:/test.lnk') do |s|
+    s.description       = 'test link'
+    s.path              = 'c:/winnt/notepad.exe'
+    s.show_cmd          = Shortcut::SHOWNORMAL
+    s.working_directory = 'C:/'
+  end
    
 == Notes
-   This code uses win32ole + wscript behind the scenes. The original C code
-   is not distributed as part of the release, but is still retained in the
-   CVS repository under the 'ext' directory should anyone ever need it.
+  This code uses win32ole + wscript behind the scenes.
 
 == Known Bugs
-   None known.
+  None known.
 	
-   Please report any bugs on the project page at
-   http://rubyforge.org/projects/win32utils.
+  Please report any bugs on the project page at
+  https://github.com/djberg96/win32-shortcut
 	
 == Future Plans
-   None at this time.
+  None at this time.
    
-   Ideas welcome. Please submit them on the project page as
-   a "Feature Request".
+  Ideas welcome. Please submit them on the project page.
 	
 == Copyright
-   (C) 2003-2008, Daniel J. Berger, All Rights Reserved
+  (C) 2003-2012, Daniel J. Berger, All Rights Reserved
     
 == License
-   Ruby's
+  Artistic 2.0
     
 == Warranty
-   This package is provided "as is" and without any express or
-   implied warranties, including, without limitation, the implied
-   warranties of merchantability and fitness for a particular purpose.
+  This package is provided "as is" and without any express or
+  implied warranties, including, without limitation, the implied
+  warranties of merchantability and fitness for a particular purpose.
 	
 == Acknowledgements
-   The original win32-shortcut package was largely based on Aldo Calpini's
-   Win32::Shortcut Perl module, and I copied some of the documentation as
-   well.
+  The original win32-shortcut package was largely based on Aldo Calpini's
+  Win32::Shortcut Perl module, and I copied some of the documentation as
+  well.
    
-   The current version (0.2.0 and later) is based on a patch by Jano Svitok.
+  The current version (0.2.0 and later) is based on a patch by Jano Svitok.
 	
-== Author(s)
-   Daniel J. Berger   
-   Park Heesob
+== Authors
+  Daniel J. Berger   
+  Park Heesob
