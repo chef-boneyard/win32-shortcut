@@ -14,7 +14,7 @@ include Win32
 puts Shortcut::VERSION
 
 Shortcut.new(Dir::DESKTOP + '\Shortcut Script.lnk') do |s|
-   s.path = "c:\\" << Dir::WINDOWS << "\\notepad.exe"
+   s.path = Dir::WINDOWS << "\\notepad.exe"
    s.window_style = Shortcut::SHOWNORMAL
    s.hotkey = "CTRL+SHIFT+F"
    s.icon_location = "notepad.exe"
