@@ -9,8 +9,8 @@ namespace :gem do
   task :create => [:clean] do
     require 'rubygems/package'
     spec = eval(IO.read('win32-shortcut.gemspec'))
-    spec.signing_key = File.join(Dir.home, '.ssh', 'ssh-public_key.pem')
-    Gem::Package.new(spec, true)
+    spec.signing_key = File.join(Dir.home, '.ssh', 'gem-private_key.pem')
+    Gem::Package.build(spec, true)
   end
 
   desc "Install the win32-shortcut gem"
