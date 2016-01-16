@@ -5,7 +5,7 @@ module Win32
   # The Shortcut class encapsulates an MS Windows shortcut.
   class Shortcut
     # The version of this library
-    VERSION = '0.2.4'
+    VERSION = '0.2.5'
 
     # Activates and displays a window. If the window is minimized or maximized,
     # the system restores it to its original size and position. An application
