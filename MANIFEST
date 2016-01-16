@@ -4,5 +4,7 @@
 * Rakefile
 * win32-shortcut.gemspec
 * examples/example_shortcut.rb
+* certs/djberg96_pub.pem
+* lib/win32-shortcut.rb
 * lib/win32/shortcut.rb
 * test/test_shortcut.rb
