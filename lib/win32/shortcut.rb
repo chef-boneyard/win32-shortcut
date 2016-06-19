@@ -5,7 +5,7 @@ module Win32
   # The Shortcut class encapsulates an MS Windows shortcut.
   class Shortcut
     # The version of this library
-    VERSION = '0.2.5'
+    VERSION = '0.3.0'
 
     # Activates and displays a window. If the window is minimized or maximized,
     # the system restores it to its original size and position. An application
@@ -57,7 +57,7 @@ module Win32
     # unless the +file+ already exists.
     #
     def self.open(file)
-      raise ArgumentError, 'shortcut not found' unless File.exists?(file)
+      raise ArgumentError, 'shortcut not found' unless File.exist?(file)
       self.new(file)
     end
 
