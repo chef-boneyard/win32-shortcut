@@ -18,7 +18,7 @@ class TC_Shortcut < Test::Unit::TestCase
   end
 
   def test_version
-    assert_equal('0.2.5', Shortcut::VERSION)
+    assert_equal('0.3.0', Shortcut::VERSION)
   end
 
   def test_arguments

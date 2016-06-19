@@ -2,9 +2,9 @@ require 'rubygems'
 
 Gem::Specification.new do |spec|
   spec.name       = 'win32-shortcut'
-  spec.version    = '0.2.5'
+  spec.version    = '0.3.0'
   spec.author     = 'Daniel J. Berger'
-  spec.license    = 'Artistic 2.0'
+  spec.license    = 'Apache 2.0'
   spec.email      = 'djberg96@gmail.com'
   spec.homepage   = 'http://github.com/djberg96/win32-shortcut'
   spec.summary    = 'An interface for creating or modifying Windows shortcuts.'
